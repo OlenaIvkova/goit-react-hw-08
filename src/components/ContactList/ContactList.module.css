@@ -1,0 +1,47 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.contactItem {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  border: 1px solid darkgray;
+  border-radius: 4px;
+  padding: 10px;
+  min-width: 200px;
+  justify-content: space-between;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.number {
+  color: gray;
+}
+
+button {
+  background-color: lightgrey;
+  color: black;
+  border: 2px solid darkgrey;
+  border-radius: 5px;
+  padding: 5px;
+  width: 50%;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+button:hover,
+button:focus {
+  border-color: blue;
+}

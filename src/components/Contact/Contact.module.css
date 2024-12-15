@@ -1,0 +1,30 @@
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid darkgrey;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.contact span {
+  font-weight: bold;
+}
+
+.contact button {
+  background-color: lightgrey;
+  color: black;
+  border: 2px solid darkgrey;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  width: 50%;
+}
+
+.contact button:hover,
+.contact button:focus {
+  border-color: blue;
+}
