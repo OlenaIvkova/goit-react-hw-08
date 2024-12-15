@@ -8,11 +8,9 @@ export const Layout = () => {
   return (
     <div className={styles.layout}>
       <AppBar />
-      <main>
+      <main className={styles.main}>
         <Outlet />
       </main>
     </div>
   );
 };
-
-{/* <main className={styles.main}></main> */}
