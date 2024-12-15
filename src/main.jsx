@@ -24,7 +24,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { store, persistor } from './redux/filters/store';
 import App from './App';
 
-// Оновлений спосіб рендерингу
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
