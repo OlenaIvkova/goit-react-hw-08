@@ -3,6 +3,7 @@ import { selectFilteredContacts } from '../../redux/filters/slice';
 import Contact from '../Contact/Contact';
 import styles from './ContactList.module.css';
 
+
 const ContactList = () => {
   const filteredContacts = useSelector(selectFilteredContacts);
 

@@ -42,25 +42,19 @@
 } */
 
 
-body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+* {
   margin: 0;
-}
-
-h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-div {
-  max-width: 600px;
-  width: 100%;
-  padding: 20px;
+  padding: 0;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
+body {
+  background-color: #f4f4f4;
+}
+
+h1, h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}

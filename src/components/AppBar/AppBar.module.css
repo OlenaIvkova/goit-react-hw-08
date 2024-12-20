@@ -1,18 +1,8 @@
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: #f8f9fa;
-  border-bottom: 1px solid #ddd;
-}
-
-nav a {
-  margin-right: 15px;
-  text-decoration: none;
-  color: #007bff;
-}
-
-nav a:hover {
-  text-decoration: underline;
+  padding: 15px;
+  background-color: #1a73e8;
+  color: white;
 }
