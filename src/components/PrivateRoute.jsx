@@ -1,27 +1,30 @@
-// import React from 'react';
-// import { Navigate } from 'react-router-dom';
-// import { useSelector } from 'react-redux';
-// import { selectIsLoggedIn } from '../redux/auth/selectors';
+// import { useSelector } from "react-redux";
+// import { selectIsLoggedIn } from "../redux/auth/selectors";
+// import { Navigate } from "react-router-dom";
 
-
-
-// export const PrivateRoute = ({ component: Component, redirectTo = '/' }) => {
+// const PrivateRoute = ({ component: Component, redirectTo = "/" }) => {
 //   const isLoggedIn = useSelector(selectIsLoggedIn);
+
 //   return isLoggedIn ? Component : <Navigate to={redirectTo} />;
 // };
 
-import { Navigate } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+// export default PrivateRoute;
+
+import { useSelector } from "react-redux";
+import { selectIsLoggedIn } from "../redux/auth/selectors";
+import { Navigate } from "react-router-dom";
 import PropTypes from 'prop-types';
-import { selectIsLoggedIn } from '../redux/auth/selectors';
 
-export const PrivateRoute = ({ component: Component, redirectTo = '/' }) => {
+const PrivateRoute = ({ element, redirectTo = "/" }) => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
-  return isLoggedIn ? <Component /> : <Navigate to={redirectTo} />;
-};
 
+  return isLoggedIn ? element : <Navigate to={redirectTo} />;
+};
 
 PrivateRoute.propTypes = {
-  component: PropTypes.elementType.isRequired, 
-  redirectTo: PropTypes.string, 
+  element: PropTypes.element.isRequired,  
+  redirectTo: PropTypes.string,  
 };
+
+export default PrivateRoute;
+
