@@ -2,7 +2,8 @@ import { Field, Form, Formik } from "formik";
 import styles from "./RegistrationForm.module.css";
 import { useDispatch } from "react-redux";
 import toast from "react-hot-toast";
-import { FaBeer } from 'react-icons/fa';
+import { FcDebian } from "react-icons/fc";
+
 
 import { register } from "../../redux/auth/operations";
 
@@ -53,7 +54,7 @@ const RegistrationForm = () => {
           <div className={styles.buttonBox}>
             <button className={styles.button} type="submit">
               <span>Submit</span>
-              <FaBeer size="20" className={styles.icon} />
+              <FcDebian size="20" className={styles.icon} />
             </button>
           </div>
         </Form>

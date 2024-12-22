@@ -1,15 +1,20 @@
-.auth {
-  display: flex;
-  gap: 10px;
-}
-
-.nav {
+.link {
+  color: #333;
   text-decoration: none;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
-.nav:hover {
-  background-color: #555;
+.link:hover {
+  color: #007bff;
+  transform: scale(1.05);
+}
+
+.active {
+  color: #007bff;
+  font-weight: bold;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 2px;
 }

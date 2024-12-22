@@ -2,7 +2,8 @@ import { Field, Form, Formik } from "formik";
 import styles from "./LoginForm.module.css";
 import { useDispatch } from "react-redux";
 import { logIn } from "../../redux/auth/operations";
-import { FaBeer } from 'react-icons/fa';
+import { FcDebian } from "react-icons/fc";
+
 
 const LoginForm = () => {
   const dispatch = useDispatch();
@@ -30,7 +31,7 @@ const LoginForm = () => {
           <div className={styles.buttonBox}>
             <button className={styles.button} type="submit">
               <span>Submit</span>
-              <FaBeer size="20" className={styles.icon} />
+              <FcDebian size="20" className={styles.icon} />
             </button>
           </div>
         </Form>

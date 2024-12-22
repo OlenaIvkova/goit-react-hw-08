@@ -3,15 +3,13 @@ import axios from 'axios';
 
 axios.defaults.baseURL = 'https://connections-api.goit.global';
 
-export const fetchContacts = createAsyncThunk('contacts/fetchAll', async (_, { getState, rejectWithValue }) => {
+export const fetchContacts = createAsyncThunk('contacts/fetchContacts', async (_, thunkAPI) => {
   try {
-    const { token } = getState().auth;
-    const response = await axios.get('/contacts', {
-      headers: { Authorization: `Bearer ${token}` },
-    });
-    return response.data;
+    const { data } = await axios.get('/contacts');
+    console.log('Отримані контакти:', data); 
+    return data;
   } catch (error) {
-    return rejectWithValue(error.message);
+    return thunkAPI.rejectWithValue(error.message);
   }
 });
 
