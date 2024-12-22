@@ -15,11 +15,8 @@ const contactsSlice = createSlice({
   },
 });
 
-// Експортуємо редюсер
-export const contactsReducer = contactsSlice.reducer;
 
-// Експортуємо дії для взаємодії з контактами
+export const contactsReducer = contactsSlice.reducer;
 export const { addContact, deleteContact } = contactsSlice.actions;
 
 export default contactsSlice.reducer;
-
