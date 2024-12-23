@@ -15,7 +15,7 @@ const UserMenu = () => {
   return (
     <div className={styles.div}>
       <p className={styles.div}>Welcome, {user.name}</p>
-      <button onClick={() => dispatch(handleLogOut())}>Logout</button>
+      <button onClick={handleLogOut}>Logout</button>
     </div>
   );
 };
